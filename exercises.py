@@ -129,7 +129,6 @@ def validate_dna(s):
 
 
 def test_validate_dna():
-
     assert validate_dna('CCGGAAGAGCTTACTTAGccggaagagcttacttag')
     assert not validate_dna('xCCGGAAGAGCTTACTTAGccggaagagcttacttag')
 
