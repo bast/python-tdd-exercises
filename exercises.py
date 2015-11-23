@@ -320,37 +320,42 @@ def test_character_statistics():
     import tempfile
     import os
 
-    text = """This watch I got here was first purchased by your great-granddaddy.
-It was bought during the First World War in a little general store in
-Knoxville, Tennessee. It was bought by private Doughboy Ernie Coolidge
-the day he set sail for Paris. It was your great-granddaddy's war watch,
-made by the first company
-to ever make wrist watches. You see, up until then, people just carried pocket
-watches. Your great-granddaddy wore that watch every day he was in the war.
-Then when he had done his duty, he went home to your great- grandmother, took
-the watch off his wrist and put it in an ol' coffee can. And in that can it
-stayed 'til your grandfather Dane Coolidge was called upon by his country to go
-overseas and fight the Germans once again. This time they called it World War
-Two. Your great-granddaddy gave it to your granddad for good luck.
-Unfortunately, Dane's luck wasn't as good as his old man's. Your granddad was a
-Marine and he was killed with all the other Marines at the battle of Wake
-Island. Your granddad was facing death and he knew it. None of those boys had
-any illusions about ever leavin' that island alive. So three days before the
-Japanese took the island, your 22-year old grandfather asked a gunner on an Air
-Force transport named Winocki, a man he had never met before in his life, to
-deliver to his infant son, who he had never seen in the flesh, his gold watch.
-Three days later, your grandfather was dead. But Winocki kept his word. After
-the war was over, he paid a visit to your grandmother, delivering to your
-infant father, his Dad's gold watch. This watch. This watch was on your Daddy's
-wrist when he was shot down over Hanoi. He was captured and put in a Vietnamese
-prison camp. Now he knew if the gooks ever saw the watch it'd be confiscated.
-The way your Daddy looked at it, that watch was your birthright. And he'd be
-damned if and slopeheads were gonna put their greasy yella hands on his boy's
-birthright. So he hid it in the one place he knew he could hide somethin'. His
-ass. Five long years, he wore this watch up his ass. Then when he died of
-dysentery, he gave me the watch. I hid with uncomfortable hunk of metal up my
-ass for two years. Then, after seven years, I was sent home to my family. And
-now, little man, I give the watch to you."""
+    text = """
+To be, or not to be: that is the question:
+Whether 'tis nobler in the mind to suffer
+The slings and arrows of outrageous fortune,
+Or to take arms against a sea of troubles,
+And by opposing end them? To die: to sleep;
+No more; and by a sleep to say we end
+The heart-ache and the thousand natural shocks
+That flesh is heir to, 'tis a consummation
+Devoutly to be wish'd. To die, to sleep;
+To sleep: perchance to dream: ay, there's the rub;
+For in that sleep of death what dreams may come
+When we have shuffled off this mortal coil,
+Must give us pause: there's the respect
+That makes calamity of so long life;
+For who would bear the whips and scorns of time,
+The oppressor's wrong, the proud man's contumely,
+The pangs of despised love, the law's delay,
+The insolence of office and the spurns
+That patient merit of the unworthy takes,
+When he himself might his quietus make
+With a bare bodkin? who would fardels bear,
+To grunt and sweat under a weary life,
+But that the dread of something after death,
+The undiscover'd country from whose bourn
+No traveller returns, puzzles the will
+And makes us rather bear those ills we have
+Than fly to others that we know not of?
+Thus conscience does make cowards of us all;
+And thus the native hue of resolution
+Is sicklied o'er with the pale cast of thought,
+And enterprises of great pith and moment
+With this regard their currents turn awry,
+And lose the name of action.--Soft you now!
+The fair Ophelia! Nymph, in thy orisons
+Be all my sins remember'd."""
 
     # we save this text to a temporary file
     file_name = tempfile.mkstemp()[1]
@@ -359,7 +364,7 @@ now, little man, I give the watch to you."""
 
     # and now we pass the file name to the function which will get the stats
     (most_abundant, least_abundant) = character_statistics(file_name)
-    assert (most_abundant, least_abundant) == ('e', 'x')
+    assert (most_abundant, least_abundant) == ('e', 'q')
 
     # we remove the temporary file
     os.unlink(file_name)
