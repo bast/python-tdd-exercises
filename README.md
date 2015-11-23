@@ -37,3 +37,8 @@ Then you can run the tests with:
 ```
 py.test -vv exercises.py
 ```
+
+You can run a single test case like this:
+```
+py.test -vv exercises.py -k test_character_statistics
+```
