@@ -221,7 +221,7 @@ def test_remove_substring():
 
 def get_position_indices(triplet, dna):
     """
-    Returns list of position indices for a specific triplet
+    Returns list of position indices for a specific triplet (3-mer)
     in a DNA sequence. We start counting from 0
     and jump by 3 characters from one position to the next.
     """
@@ -235,17 +235,17 @@ def test_get_position_indices():
 
 # ------------------------------------------------------------------------------
 
-def get_triplet_usage_chart(s):
+def get_3mer_usage_chart(s):
     """
     This routine implements a 'sliding window'
-    and extracts all possible consecutive triplets.
+    and extracts all possible consecutive 3-mers.
     It counts how often they appear and returns
     a list of tuples with (name, occurrence).
     """
     return None
 
 
-def test_get_triplet_usage_chart():
+def test_get_3mer_usage_chart():
     s = 'CCGGAAGAGCTTACTTAGGAAGAA'
     result = []
     result.append(('AAG', 2))
@@ -263,7 +263,7 @@ def test_get_triplet_usage_chart():
     result.append(('TAC', 1))
     result.append(('TAG', 1))
     result.append(('TTA', 2))
-    assert get_triplet_usage_chart(s) == result
+    assert get_3mer_usage_chart(s) == result
 
 
 # ------------------------------------------------------------------------------
