@@ -21,7 +21,7 @@ or namespace to make the badges point to your fork.
 - Fork the project.
 - Login to [Travis CI](https://travis-ci.org) with your GitHub account and activate this repo for testing.
 - Login to [Coveralls](https://coveralls.io) with your GitHub account and activate this repo for code coverage analysis.
-- Implement missing functions to make the unit tests pass (run tests either locally or let Travis run them for you).
+- Implement missing functions to make the unit tests pass (run tests either locally or let Travis run them for you each time you push changes).
 - Increase the test coverage to 100% by making [all lines](https://coveralls.io/r/bast/python-tdd-exercises?branch=master) green.
 
 
