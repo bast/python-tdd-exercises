@@ -27,8 +27,8 @@ def test_reverse_string():
 
 def is_english_vowel(c):
     """
-    Returns True if c is an english vowel and
-            False otherwise.
+    Returns True if c is an english vowel
+    and False otherwise.
     """
     return None
 
@@ -55,7 +55,7 @@ def test_is_english_vowel():
 
 def count_num_vowels(s):
     """
-    Returns the number of vowels in a string.
+    Returns the number of vowels in a string s.
     """
     return None
 
@@ -162,6 +162,7 @@ def test_base_pair():
 def transcribe_dna_to_rna(s):
     """
     Return string s with each letter T replaced by U.
+    Result is always uppercase.
     """
     return None
 
@@ -190,7 +191,7 @@ def test_get_complement():
 
 def get_reverse_complement(s):
     """
-    Return the reverse complement
+    Return the reverse complement of string s
     (complement reversed in order).
     """
     return None
@@ -241,6 +242,8 @@ def get_3mer_usage_chart(s):
     and extracts all possible consecutive 3-mers.
     It counts how often they appear and returns
     a list of tuples with (name, occurrence).
+    The list is alphabetically sorted by the name
+    of the 3-mer.
     """
     return None
 
@@ -373,6 +376,10 @@ Be all my sins remember'd."""
 # ------------------------------------------------------------------------------
 
 def pythagorean_triples(n):
+    """
+    Returns list of all unique pythagorean triples
+    (a, b, c) where a < b < c <= n.
+    """
     l = []
     # loop over all a < b < c <= n
     for c in range(1, n + 1):
