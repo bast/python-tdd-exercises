@@ -27,7 +27,7 @@ or namespace to make the badges point to your fork.
 
 ## How to run tests locally (Linux or Mac OS X)
 
-First clone the project. The unit testing
+First clone the project. Locally running the unit testing
 requires either [pytest](http://pytest.org)
 or [nose](https://nose.readthedocs.org).
 
@@ -41,7 +41,7 @@ You can run a single test case like this:
 py.test -vv exercises.py -k test_character_statistics
 ```
 
-Or alternatively with `nose`:
+Or alternatively with [nose](https://nose.readthedocs.org):
 ```
 nosetests exercises.py
 ```
