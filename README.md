@@ -33,15 +33,15 @@ or [nose](https://nose.readthedocs.org).
 
 Then you can run the tests with:
 ```
-py.test -vv exercises.py
+$ py.test -vv exercises.py
 ```
 
 You can run a single test case like this:
 ```
-py.test -vv exercises.py -k test_character_statistics
+$ py.test -vv exercises.py -k test_character_statistics
 ```
 
 Or alternatively with [nose](https://nose.readthedocs.org):
 ```
-nosetests exercises.py
+$ nosetests exercises.py
 ```
