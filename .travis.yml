@@ -1,10 +1,16 @@
 language:
   - python
+
 python:
   - 3.4
+
 install:
   - pip install pytest-cov
   - pip install python-coveralls
+
 script:
   - py.test -vv exercises.py --cov exercises
   - coveralls
+
+notifications:
+  email: false
