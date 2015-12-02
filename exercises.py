@@ -348,7 +348,7 @@ With a bare bodkin? who would fardels bear,
 To grunt and sweat under a weary life,
 But that the dread of something after death,
 The undiscover'd country from whose bourn
-No traveller returns, puzzles the will
+No traveller returns, puzzzles the will
 And makes us rather bear those ills we have
 Than fly to others that we know not of?
 Thus conscience does make cowards of us all;
