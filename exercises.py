@@ -285,8 +285,7 @@ def test_read_column():
     import tempfile
     import os
 
-    text = """
-1   0.1  0.001
+    text = """1   0.1  0.001
 2   0.2  0.002
 3   0.3  0.003
 4   0.4  0.004
