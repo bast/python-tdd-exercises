@@ -312,7 +312,7 @@ def character_statistics(file_name):
     Reads text from file file_name, then
     lowercases the text, and then returns
     a tuple (x, y), where x is the most abundant
-    and y is the least abundant character found.
+    and y is the least abundant but present character found.
     Use the isalpha() method to figure out
     whether the character is in the alphabet.
     """
